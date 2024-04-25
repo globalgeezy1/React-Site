@@ -37,8 +37,4 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.PRIVATE_KEY }}
         script: |
-          cd sh React-site.sh
-          git pull origin
-          cd
-          sudo cp -r React-Site/* /var/www/html
-          sudo systemctl restart nginx
+          sh react.sh
