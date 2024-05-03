@@ -17,7 +17,6 @@ if [ $STATUS_CODE -ne 200 ]; then
   echo "Failed! Expected 200 response, got $STATUS_CODE"
   exit 1
 fi
-else
   echo "Success! Got expected response from local server"
   exit 0  
 fi
